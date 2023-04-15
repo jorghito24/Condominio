@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #000000;
+    height: 90px;
+    width: 100%;
+    
+}
+/*body{
+    background-color: #D1D325;
+}*/
+body{
+    /*background-image: url(../img/fondoproyecto.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    background-position: center;
+}
+
+.logo{
+    height: 50px;
+    margin-left: 10px;
+    background-position: center;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/*li a.active, li a:hover{
+    background: blue;
+    transition: .5s;
+
+}*/
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Carrusel*/
+#conteItemsCarrusel{
+    border: 5px solid black;
+    height: 200px;
+    overflow: hidden;
+}
+
+.itemCarrusel{
+    border: 1px solid black;
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    /*background-color: aqua;*/
+    height: 100%;
+}
+
+.flechasCarrusel{
+    background-color: rgb(64, 64, 139, 0.3);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tarjeta1{
+    background-color: blueviolet;
+}
+#tarjeta2{
+    background-color: royalblue;
+}
+#tarjeta3{
+    background-color: red;
+}
