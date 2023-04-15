@@ -7,11 +7,14 @@
 }
 
 nav{
-    background: #746666;
+    background: #211313;
     height: 90px;
     width: 100%;
     
 }
+/*body{
+    background-color: #D1D325;
+}*/
 body{
     background-image: url(../img/fondoproyecto.jpg);
     background-repeat: no-repeat;
