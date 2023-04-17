@@ -7,3 +7,6 @@ def index(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def nosotros(request):
+    return render(request, 'nosotros.html')
