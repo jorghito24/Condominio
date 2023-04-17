@@ -15,12 +15,12 @@
         <label for="check" class="checkbtn">
             <i class="fa-solid fa-bars"></i>
         </label>
-        <a href="#" class="enlace">
+        <a href="{% url 'index' %}" class="enlace">
             <img src="{%static '../static/img/otro.png'%}" alt="" class="logo">
         </a>
         <ul>
-            <li><a href="{% url 'index' %}">Inicio</a></li>
-            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'login' %}">Iniciar Sesion</a></li>
+            <li><a href="{% url 'nosotros' %}">Quienes Somos</a></li>
             
         </ul>
     </nav>
