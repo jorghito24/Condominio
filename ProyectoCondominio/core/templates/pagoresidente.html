@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="{% static '../static/css/main.css' %}">
+    <title>Mi Condominio</title>
+</head>
+<body>
+    
+    <header>
+        <a href="{% url 'vistaresidente' %}" class="logo">
+            <img src="{%static '../static/img/otrologo.png'%}" alt="">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+        <na class="navbar">
+            <ul>
+                <li><a href="#">Pago en Línea</a>
+                <ul>
+                    <li><a href="{% url 'pagoresidente' %}">Paga Aquí</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Reservas</a>
+                    <ul>
+                        <li><a href="#">Reserva Aquí</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </na>
+    </header>
+    <footer>
+        <nav id="RedesSociales">
+            <br>
+        <h4>Redes Sociales</h4></a>
+        <br>
+            <button class="btn btn-outline-success my-2 my-sm-0"><a href="https://www.instagram.com/"><img src="{%static '../static/img/icons8-instagram-48.png'%}" alt=""></a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0"><a href="https://www.facebook.com/"><img src="{%static '../static/img/icons8-facebook-48.png'%}" alt=""></a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0"><a href="https://www.twitter.com/"><img src="{%static '../static/img/icons8-twitter-48.png'%}" alt=""></a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0"><a href="https://www.google.com/maps/place/Fosa+de+las+Marianas/@11.3493333,142.190811,15z/data=!4m13!1m7!3m6!1s0x67328f3cd57de715:0x1bbe64e7a21aa7fc!2sFosa+de+las+Marianas!3b1!8m2!3d11.3493126!4d142.1995658!3m4!1s0x67328f3cd57de715:0x1bbe64e7a21aa7fc!8m2!3d11.3493126!4d142.1995658"><img src="{%static '../static/img/icons8-logo-de-google-48.png'%}" alt=""></a></button>
+            </nav>
+        <br>
+    </footer>
+   
+</body>
+</html>
