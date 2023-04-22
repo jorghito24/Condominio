@@ -9,90 +9,24 @@
 
 /*Carrusel*/
 
-.carruselimg{
+.carruselimg, #container{
     height: 305px;
-    width: 980px;
+    width: 100%;
     object-fit: cover;
 }
 
-#container{
-    box-sizing: border-box;
-    width: 100%;
-    transition: transform 2s ease, opacity .5s ease-out
-}
-
-#conteItemsCarrusel {
-    border: 5px solid black;
-    height: 300px;
-    overflow: hidden;
-}
-
-.itemCarrusel {
-    border: 1px solid black;
-    height: 100%;
-    position: relative;
-}
-
-
-
-.tarjetaCarrusel {
-    /*background-color: aqua;*/
-    height: 100%;
-}
-
-.flechasCarrusel {
-    background-color: rgb(64, 64, 139, 0.3);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-#tarjeta1{
-    background-color: blueviolet;
-}
-
-#tarjeta2 {
-    background-color: royalblue;
-}
-
-#tarjeta3 {
-    background-color: red;
-}
-
-#contePuntos{
-    background-color: gainsboro;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-#contePuntos > a{
-    font-size: 1.5em;
-}
-
-#tarjeta1 > img{
-    width: 100%;
-    height: 290px;
-}
 
 /*Menu*/
 nav {
     background: #040303;
+    padding-left: 140px;
+    padding-right: 150px;
     height: 90px;
     width: 100%;
-
 }
 
-/*body{
-    background-color: #D1D325;
-}*/
+
 body {
-    /*background-image: url(../img/fondoproyecto.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -150,7 +84,9 @@ nav ul li a {
 #check {
     display: none;
 }
+
 /*Menú Responsivo*/
+
 @media(max-width: 952px){
     .enlace{
         padding-left: 20px;
@@ -226,6 +162,7 @@ button[type="submit"]:hover {
 }
 
 /*Footer*/
+
 #RedesSociales  {
     background-color: cadetblue;
     text-align: center;
