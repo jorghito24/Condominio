@@ -25,11 +25,8 @@ nav {
     width: 100%;
 }
 
-/*body{
-    background-color: #D1D325;
-}*/
+
 body {
-    /*background-image: url(../img/fondoproyecto.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -87,7 +84,9 @@ nav ul li a {
 #check {
     display: none;
 }
+
 /*Menú Responsivo*/
+
 @media(max-width: 952px){
     .enlace{
         padding-left: 20px;
@@ -163,6 +162,7 @@ button[type="submit"]:hover {
 }
 
 /*Footer*/
+
 #RedesSociales  {
     background-color: cadetblue;
     text-align: center;
