@@ -13,26 +13,31 @@
     
     <!--------- ENCABEZADO --------->
     <header>
-        <a href="{% url 'vistaresidente' %}" class="logo">
-            <img src="{%static '../static/img/otrologo.png'%}" alt="">
-        </a>
+        <nav>
 
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
-        <na class="navbar">
-            <ul>
-                <li><a href="#">Pago en Línea</a>
+            <a href="{% url 'vistaresidente' %}" class="logo">
+                <img src="{%static '../static/img/otrologo.png'%}" alt="">
+            </a>
+    
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <na class="navbar">
                 <ul>
-                    <li><a href="{% url 'pagoresidente' %}">Paga Aquí</a></li>
-                </ul>
-                </li>
-                <li><a href="#">Reservas</a>
+                    <li><a href="#">Pago en Línea</a>
                     <ul>
-                        <li><a href="#">Reserva Aquí</a></li>
+                        <li><a href="{% url 'pagoresidente' %}">Paga Aquí</a></li>
                     </ul>
-                </li>
-            </ul>
-        </na>
+                    </li>
+                    <li><a href="#">Reservas</a>
+                        <ul>
+                            <li><a href="#">Reserva Aquí</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </na>
+        </nav>
     </header>
 
 
