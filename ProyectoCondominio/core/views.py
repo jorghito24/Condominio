@@ -15,6 +15,12 @@ def login(request):
 def nosotros(request):
     return render(request, 'nosotros.html')
 
+def vistadirectiva(request):
+    return render(request, 'vistadirectiva.html')
+
+def vistaconserje(request):
+    return render(request, 'vistaconserje.html')
+
 def vistaresidente(request):
     return render(request, 'vistaresidente.html')
 
