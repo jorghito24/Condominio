@@ -7,48 +7,90 @@
 }
 
 /*Carrusel*/
-.carruselimg, #container{
+.carruselimg{
+    border-radius: 5px;
     height: 305px;
     width: 100%;
     object-fit: cover;
 }
 
-/*Servicios*/
-#servicios{
-    height: 305px;
-    width: 98%;
+/*Botones*/
+.boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 40px;
+    background: black;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.font{
-        font: var(--font_2);
-        color: rgb(var(--color_15));
-        letter-spacing: 0em;
+.boton span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
 }
 
-#xda{
+.boton::after{
+    content: "";
+    width: 110%;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 40px);
+    background: black;
+    border-bottom: 50px solid rgb(21, 228, 131);
+    border-right: 40px solid transparent;
+    transition: .4s ease-in-out all;
+}
+
+.boton:hover::after{
+    left: 0;
+}
+
+#paddingboton{
+    padding-bottom: 15px;
+}
+
+/*Texto tarjetas*/
+
+#espaciado{
+    font: var(--font_2);
     letter-spacing: 0.3em;
-        line-height: normal;
-        text-align: center;
-        font-size: 34px;
-}
-
-.xd{
-        border-color: rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
-        size: var(--brw,1px);
-        background-color: white;
+    line-height: normal;
+    text-align: center;
+    font-size: 34px;
 }
 
 .borde{
-    background-color: var(--container-corvid-background-color,rgba(var(--bg,var(--color_11)),var(--alpha-bg,1)));
-    border: var(--container-corvid-border-width,var(--brw,1px)) solid var(--container-corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1)));
-    border-radius: var(--rd,5px);
-    bottom: 0;
-    box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
-    left: 0;
-    position: relative;
-    right: 0;
-    top: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
 }
+
+.borde.boton{
+    align-items: center;
+}
+
+/*Textos*/
+p{
+    position: relative;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 75px;
+    width: 80%;
+}
+
 
 /*Header*/
 nav{
@@ -70,6 +112,7 @@ body {
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px);
+    overflow-x: hidden;
 }
 
 .logo {
@@ -135,6 +178,9 @@ nav label{
 }
 
 @media(max-width: 991px){
+
+
+
     nav{
         width: 100%;
     }
